@@ -29,7 +29,6 @@ window.onscroll = () => {
     calcScroll()
 };
 
-
 const calcScroll = () => {
     var winScroll = document.body.scrollTop;
     var height = document.body.scrollHeight - document.body.clientHeight;
@@ -42,7 +41,7 @@ const calcScroll = () => {
     } else {
         var scaleMax = -2500;
     }
-    console.log(scaleMax);
+
     var newmargin = scale(scrolled, 0, 100, 0, scaleMax);
 
     // set mapped scroll % to the wave position
