@@ -12,7 +12,8 @@ section.newsletter {
     div.newsletter-img-wrapper {
         grid-column: 2 / span 3;
         margin-top: -100px;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+        align-self: end;
         @include respond-below(md){
             display: none;
         }
@@ -21,10 +22,11 @@ section.newsletter {
     div.newsletter-content {
         grid-column: 7 / span 5;
         margin: auto 0;
+        padding: 2rem 0;
 
         @include respond-below(md){
             grid-column: span 12;
-            margin: 2rem 0;
+            margin: 0;
         }
 
         h2{

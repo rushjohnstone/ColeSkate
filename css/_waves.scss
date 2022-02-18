@@ -9,26 +9,33 @@
 }
 
 .wave-container-2 {
-    background: url('/assets/wave_white.svg');
+    background: url('/assets/wave_white_static.svg');
     width: 100vw;
+    min-width: 768px;
     height: 200px;
     margin-top: -175px;
-    margin-bottom: -175px;
+    margin-bottom: -200px;
     transform: scale(-1);
     @include respond-below(md){
-        margin-bottom: -140px;
+        margin-bottom: -200px;
+    }
+    @include respond-below(xs){
+        margin-left: -200px;
     }
 }
 
 .wave-container-3 {
-    background: url('/assets/wave_white.svg');
+    background: url('/assets/wave_white_static.svg');
     width: 100vw;
+    min-width: 768px;
     height: 200px;
-    margin-top: -175px;
+    margin-top: -165px;
     margin-bottom: -2px;
     @include respond-below(sm){
-        margin-top: -90px;
-        margin-bottom: -100px;
+        margin-top: -175px;
+    }
+    @include respond-below(xs){
+        margin-left: -200px;
     }
 }
 
