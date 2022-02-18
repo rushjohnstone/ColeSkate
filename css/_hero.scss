@@ -28,6 +28,9 @@ section.hero {
             opacity: 0.2;
             min-height: 100%;
             min-width: 100%;
+            @include respond-below(md){
+                object-position: 25% center;
+            }
         }
     }
 

@@ -450,6 +450,13 @@ section.hero div.hero-img-wrapper img.hero-img {
   min-width: 100%;
 }
 
+@media (max-width: 1024px) {
+  section.hero div.hero-img-wrapper img.hero-img {
+    -o-object-position: 25% center;
+       object-position: 25% center;
+  }
+}
+
 section.hero div.hero-content {
   text-align: center;
 }
