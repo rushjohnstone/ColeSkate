@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html{
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
+.pink-text{
+    color: $title-footer-bg;
+}
+
+.cream-text{
+    color: $highlight-text-color;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-top: 2.75rem;
+    @include respond-below(sm){
+        font-size: 2rem;
+    }
+}
+
+h2, a.menu-link{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    letter-spacing: 2px;
+    @include respond-below(sm){
+        font-size: 1.75rem;
+    }
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    color: $title-footer-bg;
+    line-height: 1.4;
+    @include respond-below(sm){
+        font-size: 1.25rem;
+    }
+}
+
+h4, a.blog-link{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+a.blog-link{
+    text-decoration: underline;
+}
+
+p.copy{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    color: black;
+}
+
+a.menu-link{
+    display: block;
+    margin-bottom: 2.25rem;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+a.menu-link.selected {
+    color: $title-footer-bg;
+    text-decoration: underline;
+}
+
+.footer-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    a{
+        text-decoration: underline;
+        transition: color 0.2s ease;
+        &:hover{
+            color: $highlight-text-color;
+        }
+    }
+}
+
+p.cream-copy{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: $highlight-text-color;
+    font-size: 1.5rem;
+    
+    @include respond-below(sm){
+        font-size: 1.25rem;
+    }
+}
+
+button.border-btn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}

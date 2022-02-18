@@ -1,0 +1,45 @@
+.wave-container-1 {
+    background: url('/assets/wave_white.svg') repeat-x;
+    width: 2600px;
+    height: 198px;
+    overflow-x: hidden;
+    //animation: wave 4s linear infinite;
+    transform: translate3d(0, 0, 0);
+    transform: translateY(2px);
+}
+
+.wave-container-2 {
+    background: url('/assets/wave_white.svg');
+    width: 100vw;
+    height: 200px;
+    margin-top: -175px;
+    margin-bottom: -175px;
+    transform: scale(-1);
+    @include respond-below(md){
+        margin-bottom: -140px;
+    }
+}
+
+.wave-container-3 {
+    background: url('/assets/wave_white.svg');
+    width: 100vw;
+    height: 200px;
+    margin-top: -175px;
+    margin-bottom: -2px;
+    @include respond-below(sm){
+        margin-top: -90px;
+        margin-bottom: -100px;
+    }
+}
+
+// if we wanted to animate the waves without scroll
+
+// @keyframes wave {
+//     0% {
+//         margin-left: 0;
+//     }
+
+//     100% {
+//         margin-left: -1920px;
+//     }
+// }

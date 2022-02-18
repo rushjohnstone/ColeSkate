@@ -1,0 +1,44 @@
+nav.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $newsletter-bg;
+    width: 33%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 30px 40px;
+    transition: all 0.2s ease;
+    z-index: 99;
+    transform: translateX(100%);
+    overflow-y: scroll;
+
+    @include respond-below(md){
+        width: 100%;
+        .menu-header img{
+            display: none;
+        }
+    }
+
+    @include respond-below(sm){
+        padding: 15px 20px;
+    }
+
+    .menu-header {
+        height: 30px;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .menu-items {
+        padding: 60px 0;
+    }
+
+    &.menu-open {
+        transform: translateX(0);
+    }
+}

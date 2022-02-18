@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: $title-footer-bg;
+    padding: 40px;
+    @include respond-below(sm){
+        padding: 20px;
+    }
+    @include respond-below(xs){
+        flex-direction: column;
+    }
+    .footer-text{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        line-height: 1.4;
+        @include respond-below(md){
+            flex-direction: column;
+            .link-separator{
+                display: none;
+            }
+        }
+
+    }
+
+    img{
+        width: 100px;
+        @include respond-below(xs){
+            order: -1;
+            margin-bottom: 1rem;
+        }
+    }
+}
